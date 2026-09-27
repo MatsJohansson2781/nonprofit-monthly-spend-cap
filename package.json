@@ -1,0 +1,22 @@
+{
+  "name": "nonprofit-monthly-spend-cap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/nonprofit_service.ts",
+    "start": "tsx src/nonprofit_service.ts",
+    "cap": "tsx src/set_monthly_cap.ts",
+    "test": "tsx --test test/workload_planner.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.20.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
